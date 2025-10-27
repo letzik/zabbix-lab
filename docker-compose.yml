@@ -35,3 +35,9 @@ services:
       PHP_TZ: Europe/Kyiv
     ports:
       - "8080:8080"
+services:
+  - type: web
+    name: zabbix-web
+    env: docker
+    plan: free
+    dockerfilePath: ./docker-compose.yml
